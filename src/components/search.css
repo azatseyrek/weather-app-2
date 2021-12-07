@@ -1,0 +1,48 @@
+.search {
+  min-height: 10vh;
+  /* vh pencere yuksekligini baz alir */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid lightgrey;
+  border: 1px solid black;
+}
+input,
+button {
+  padding: 0.5rem;
+  margin-left: 10px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+}
+input {
+  border: 1px solid lightgray;
+  width: 60%;
+}
+input:focus {
+  outline: none;
+}
+
+button {
+  width: 8em;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 600px) {
+  .search {
+    flex-direction: column;
+  }
+
+  button {
+    width: 4em;
+  }
+}
+
+
