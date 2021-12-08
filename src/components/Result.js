@@ -1,20 +1,24 @@
 import React from "react";
 import "./result.css";
 
-const Result = ({ weatherData}) => {
+const Result = ({ date, temp, condition, conditionIcon}) => {
   return (
     <div className="result">
-      <div className="result__container">
-        <h2>Date</h2>
-
+  
         <div className="result__list">
-          <ul>
-            <li>{weatherData[0].day.condition.text}</li>
-            <li>1</li>
-            <li>1</li>
-          </ul>
+
+
+            <ul>
+            <li><span className="date">{date}</span></li>
+              <li>{temp}°C</li>
+              <li className="condition">{condition}</li>
+              <li>
+                <img src={conditionIcon} alt="icon" />
+              </li>
+            </ul>
+
         </div>
-      </div>
+      {/* </div> */}
     </div>
   );
 };
